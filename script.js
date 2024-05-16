@@ -4,6 +4,7 @@ let turn = "X";
 let scoreX = 0;
 let scoreO = 0;
 let isGameOver = false;
+document.querySelector(".turn-name").innerHTML = "";
 
 boxes.forEach(e => {
     e.innerHTML = "";
