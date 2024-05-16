@@ -8,7 +8,8 @@
 </head>
 <body>
     <div class="turn-container">
-        <h3 class="turn-name">X's Turn</h3> 
+        <!-- <h3 class="turn-name">X's Turn</h3>  -->
+        <h3 class="turn-name"></h3> 
         <div class="turn-box align"><svg width="26" height="26" viewBox="0 0 26 26"> <!-- before they just said X and O -->
             <line x1="1" y1="1" x2="25" y2="25" stroke="black" stroke-width = "2"/>
             <line x1="1" y1="25" x2="25" y2="1" stroke="black" stroke-width = "2"/>
@@ -45,7 +46,9 @@
         </div>
     </div> -->
     <h2 id="results"></h2>
-    <button id="replay">Play Again?</button>
+    <button id="replay"><svg id="replay-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill="black" d="M12 2a10 10 0 1 0 10 10h-2a8 8 0 1 1-8-8v3l4-4-4-4v3z"/>
+    </svg></button>
 
     <script src="script.js"></script>
     

@@ -101,9 +101,10 @@ body {
     font-size: 5rem;
     font-weight: 700;
     border: 2px solid #000;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
+    display: none; /**/
 }
 
 .box:hover {
@@ -123,6 +124,10 @@ body {
     animation-play-state: paused;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, 
                 rgba(240, 46, 170, 0.3) 10px 10px;
+}
+
+#replay svg {
+    transform: translate(0, 3px); /* Adjust the values to move the SVG */
 }
 
 #replay:hover {

@@ -19,16 +19,20 @@ boxes.forEach(e => {
     })
 })
 
+boxes.forEach(e => { // so the weird numbers don't show up
+    e.style.display = "flex";
+})
+
 function updateTurn() {
     if (turn === "X") {
         turn = "O";
         document.querySelector(".bg").style.left = "85px";
-        document.querySelector(".turn-name").innerHTML = "O's Turn";
+        // document.querySelector(".turn-name").innerHTML = "O's Turn";
     }
     else {
         turn = "X";
         document.querySelector(".bg").style.left = "0";
-        document.querySelector(".turn-name").innerHTML = "X's Turn";
+        // document.querySelector(".turn-name").innerHTML = "X's Turn";
     }
 }
 
@@ -57,7 +61,7 @@ function checkWin() {
                 scoreO++;
                 document.getElementById("scoreO").textContent = scoreO;
             }
-            document.querySelector("#results").innerHTML = turn + " wins!";
+            // document.querySelector("#results").innerHTML = turn + " wins!";
             if (turn === "X") {
                 document.getElementById("scoreX").style.color = "#08D9D6";
             }
