@@ -78,8 +78,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    height: 450px;
-    width: 450px;
+    height: 410px;
+    width: 410px;
     margin: 30px auto; /* centers */
     border: 2px solid #000;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, 
@@ -133,6 +133,28 @@ body {
                 rgba(240, 46, 170, 0.2) 15px 15px, 
                 rgba(240, 46, 170, 0.1) 20px 20px, 
                 rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+}
+
+#scoreboard div {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* .player-score div:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+} */
+
+#scoreboard span {
+    color: #FF2E63;
+    font-weight: bold;
 }
 
 .box svg {

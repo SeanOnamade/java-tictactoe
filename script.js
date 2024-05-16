@@ -1,6 +1,8 @@
 let boxes = document.querySelectorAll(".box");
 
 let turn = "X";
+let scoreX = 0;
+let scoreO = 0;
 let isGameOver = false;
 
 boxes.forEach(e => {
@@ -47,6 +49,13 @@ function checkWin() {
 
         if (v0 != "" && v0 === v1 && v0 === v2) {
             isGameOver = true;
+            if (turn === "X") {
+                scoreX++;
+                document.getElementById("scoreX").textContent = scoreX;
+            } else {
+                scoreO++;
+                document.getElementById("scoreO").textContent = scoreO;
+            }
             document.querySelector("#results").innerHTML = turn + " wins!";
             document.querySelector("#replay").style.display = "inline";
             document.querySelector(".bg").style.animationPlayState = "paused";
