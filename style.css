@@ -14,6 +14,7 @@
 body {
     background-color: #252a34;
     /* background: linear-gradient(#ee49fd, #2e1fff); */
+    margin: 0 !important;
     margin-top: 0vh;
     margin-bottom: 20vh;
     padding: 0;
