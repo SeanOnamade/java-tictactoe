@@ -57,6 +57,12 @@ function checkWin() {
                 document.getElementById("scoreO").textContent = scoreO;
             }
             document.querySelector("#results").innerHTML = turn + " wins!";
+            if (turn === "X") {
+                document.getElementById("scoreX").style.color = "#08D9D6";
+            }
+            else {
+                document.getElementById("scoreO").style.color = "#08D9D6";
+            }
             document.querySelector("#replay").style.display = "inline";
             document.querySelector(".bg").style.animationPlayState = "paused";
             document.querySelector(".bg").style.backgroundColor = "#FF2E63";
@@ -104,6 +110,8 @@ document.querySelector("#replay").addEventListener("click", () => {
     document.querySelector("#replay").style.display = "none";
     document.querySelector(".bg").style.animationPlayState = "running";
     document.querySelector("#replay").style.animationPlayState = "paused";
+    document.getElementById("scoreX").style.color = "#FF2E63";
+    document.getElementById("scoreO").style.color = "#FF2E63";
 
     boxes.forEach(e => {
         e.innerHTML = "";
